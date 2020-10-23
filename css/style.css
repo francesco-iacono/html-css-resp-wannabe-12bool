@@ -2,26 +2,25 @@ body {
   text-align: center;
   font-size: 16px;
 }
-
 h1 {
   font-size: 2em;
   margin: 20px 0;
+}
+img {
+  height: 200px;
 }
 h3 {
   line-height: 60px;
 }
 p {
-  padding-bottom: 20px;
+  padding: 0 10px 20px;
 }
-/* [class*='col-'] {
-  padding: 20px;
-} */
-.container.grey {
+
+.background-grey {
   background-color: #f9f9f9;
 }
 
 #lezioni img {
-  height: 200px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -32,8 +31,44 @@ p {
 }
 
 #why img {
-  height: 200px;
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  h1 {
+    font-size: 35px;
+  }
+  img {
+    height: 160px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    padding: 0 15px 20px;
+  }
+  hr {
+    display: none;
+  }
+
+  #why h3 {
+    line-height: normal;
+    padding: 10px 0;
+  }
+
+}
+
+/* dispositivi XS */
+@media screen and (max-width: 767px) {
+
+  .background-lightyellow {
+    background-color: lightyellow;
+  }
+  img {
+    height: 120px;
+  }
 }
